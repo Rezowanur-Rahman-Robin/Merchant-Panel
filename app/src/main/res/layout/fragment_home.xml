@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            >
+
+            <TextView
+                android:id="@+id/dashboard_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DashBoard"
+                android:textAlignment="textEnd"
+                android:textSize="40dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <LinearLayout
+                android:id="@+id/dash_holder_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/dashboard_title"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/rectangle_2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"/>
+
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="10dp"
+                                    android:src="@drawable/products"
+                                    android:layout_marginRight="10dp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/total_products_dashboard"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textSize="30dp"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="15dp"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="6dp"
+                                android:text="Products"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18dp"
+                                android:layout_marginBottom="2dp"/>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_3">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"/>
+
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="10dp"
+                                    android:src="@drawable/orders"
+                                    android:layout_marginRight="10dp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/total_orders_dashboard"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="5"
+                                android:textSize="30dp"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="15dp"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="6dp"
+                                android:text="Orders"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18dp"
+                                android:layout_marginBottom="2dp"/>
+
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/rectangle_5">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"/>
+
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="10dp"
+                                    android:src="@drawable/pending"
+                                    android:layout_marginRight="10dp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/pending_orders_dashboard"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:textSize="30dp"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="15dp"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="6dp"
+                                android:text="Pending Orders"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18dp"
+                                android:layout_marginBottom="2dp"/>
+
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rectangle_4">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"/>
+
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="10dp"
+                                    android:src="@drawable/complete"
+                                    android:layout_marginRight="10dp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/complete_orders_dashboard"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="3"
+                                android:textSize="30dp"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="15dp"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="6dp"
+                                android:text="Complete Orders"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18dp"
+                                android:layout_marginBottom="2dp"/>
+
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/most_recent_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dash_holder_linear"
+                android:text="My Products"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textColor="@color/yellowText"
+                />
+            <ImageView
+                android:id="@+id/hr_mostRecent"
+                android:layout_below="@+id/most_recent_product"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/yellowText"
+                android:layout_marginBottom="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dashBoard_recycler_view"
+                android:layout_below="@+id/hr_mostRecent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProductInfoActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+       >
+
+        <include
+            layout="@layout/toolbar_merchant"
+            android:id="@+id/main_toolbar"
+            >
+        </include>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_toolbar">
+
+            <RelativeLayout
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rectangle"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product Information"
+                    android:layout_marginTop="40dp"
+                    android:textSize="22sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:id="@+id/hr"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#050D1E"
+                    android:layout_below="@+id/account"/>
+
+                <EditText
+                    android:id="@+id/product_name_edit_product"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Product name"
+                    android:layout_below="@+id/hr"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <EditText
+                    android:id="@+id/product_des_edit_product"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Description"
+                    android:lines="3"
+                    android:layout_below="@+id/product_name_edit_product"
+                    android:layout_centerHorizontal="true"
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/test2"
+                    android:layout_below="@+id/product_des_edit_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Package Type*"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <RadioGroup
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/package_type_Group_edit">
+                                <RadioButton
+                                    android:id="@+id/p_type_1_edit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Box Packaging"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/p_type_2_edit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Glass Packaging" />
+
+
+                            </RadioGroup>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:text=" "
+                        android:background="@color/colorPrimaryDark"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Package Size*"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+                            <RadioGroup
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/sizeGroup_merchant_edit">
+                                <RadioButton
+                                    android:id="@+id/size1_merchant_edit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Under 1 sq Feet"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/size2_merchant_edit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="1-2 sq Feet" />
+                                <RadioButton
+                                    android:id="@+id/size3_merchant_edit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="More than 2 sq Feet" />
+
+                            </RadioGroup>
+
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_marginTop="25dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:text=" "
+                            android:background="@color/colorPrimaryDark"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Package Weight*"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+                                <RadioGroup
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:id="@+id/weightGroup_merchant_edit">
+                                    <RadioButton
+                                        android:id="@+id/w1_merchant_edit"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Under 500 gm"
+                                        />
+                                    <RadioButton
+                                        android:id="@+id/w2_merchant_edit"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="0.5-1 kg" />
+                                    <RadioButton
+                                        android:id="@+id/w3_merchant_edit"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="1-3 kg" />
+                                    <RadioButton
+                                        android:id="@+id/w4_merchant_edit"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="4-7 kg"
+                                        />
+                                    <RadioButton
+                                        android:id="@+id/w5_merchant_edit"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="More than 7 kg"/>
+
+                                </RadioGroup>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/product_price_edit_product"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Price (in TK)"
+                    android:inputType="number"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/test2"
+                    android:layout_centerHorizontal="true"
+                    />
+
+
+                <EditText
+                    android:id="@+id/product_dis_percentage_edit_product"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Discount (%)"
+                    android:inputType="number"
+                    android:layout_below="@+id/product_price_edit_product"
+                    android:layout_marginTop="30dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/product_discount_show_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/product_dis_percentage_edit_product"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:text="Discount Price:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/discount_price_text_edit_product"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" ৳"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+                <TextView
+                    android:id="@+id/image_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="Enter Your Product Image:"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/product_discount_show_linear"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"/>
+
+                <ImageButton
+                    android:id="@+id/product_image_upload_button_edit_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_text"
+                    android:src="@drawable/ic_file_upload_black_24dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:id="@+id/selected_product_image_edit_product"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/product_image_upload_button_edit_product"/>
+
+
+
+
+
+                <TextView
+                    android:id="@+id/Business_Information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pickup Information"
+                    android:layout_marginTop="10dp"
+                    android:textSize="22sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_below="@+id/selected_product_image_edit_product"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:id="@+id/hr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#050D1E"
+                    android:layout_below="@+id/Business_Information"/>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_of_select_district"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/hr1">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select District:"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        />
+
+                    <Spinner
+                        android:id="@+id/districts_edit_products"
+                        android:layout_marginTop="12dp"
+                        android:foregroundTint="#222"
+                        android:background="#001c47"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_of_select_thana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/linear_layout_of_select_district"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Thana:"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        />
+
+                    <Spinner
+                        android:id="@+id/thana_edit_product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:foregroundTint="#222"
+                        android:background="#001c47"
+                        android:layout_marginBottom="10dp"
+
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/product_details_address_edit_product"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Pickup address details"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/linear_layout_of_select_thana"
+                    android:lines="3"
+                    android:layout_centerHorizontal="true"
+                    />
+                <EditText
+                    android:id="@+id/product_picUp_instructions_edit_product"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="PickUp Instructions"
+                    android:lines="2"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/product_details_address_edit_product"
+                    android:layout_centerHorizontal="true"
+                    />
+
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/edit_product_button_merchant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bluelongbuttonshape"
+                    android:layout_below="@+id/product_picUp_instructions_edit_product"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Update Product"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellowText"
+                    android:textSize="25sp"
+                    android:layout_marginBottom="20dp"/>
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

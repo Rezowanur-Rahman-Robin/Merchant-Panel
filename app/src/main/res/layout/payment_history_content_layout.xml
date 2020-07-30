@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/my_product_show_layout_merchant_wallet"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:background="#D6D6D6">
+
+        <ImageView
+            android:id="@+id/product_image_my_products_wallet"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/product_image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/order_id_my_products_wallet"
+                    android:layout_width="wrap_content"
+                    android:maxWidth="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="#146737728"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17sp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"/>
+
+
+
+                <TextView
+                    android:id="@+id/product_price_my_products_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+0 ৳"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="textEnd"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#FF3E00"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                >
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25 Jul 2020"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Within 2 Days.."
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/yellowText"
+                    android:layout_marginLeft="30dp"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

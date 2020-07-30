@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarchantRegisterActivity"
+    android:background="@color/colorPrimaryDark"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <include
+        layout="@layout/toolbar_merchant"
+        android:id="@+id/main_toolbar"
+        >
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_toolbar">
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_rectangle"
+        android:orientation="vertical"
+        >
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Information"
+                android:layout_marginTop="40dp"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                />
+
+        <View
+            android:id="@+id/hr"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#050D1E"
+            android:layout_below="@+id/account"/>
+
+            <EditText
+                android:id="@+id/merchant_name_registration"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="    Enter Your Name.."
+                android:layout_below="@+id/hr"
+                android:layout_centerHorizontal="true"
+                />
+        <EditText
+            android:id="@+id/merchant_phone_registration"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="    Enter Phone Number.."
+            android:layout_below="@+id/merchant_name_registration"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/merchant_email_registration"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="    Enter Your Email.."
+            android:inputType="textEmailAddress"
+            android:layout_below="@+id/merchant_phone_registration"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/Business_Information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Business Information"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/merchant_email_registration"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:id="@+id/hr1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#050D1E"
+            android:layout_below="@+id/Business_Information"/>
+
+        <EditText
+            android:id="@+id/merchant_business_name_registration"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="    Business Name.."
+            android:layout_below="@+id/hr1"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/merchant_business_details_registration"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="    Business Details.."
+            android:layout_below="@+id/merchant_business_name_registration"
+            android:layout_centerHorizontal="true"
+            android:lines="3"
+            />
+        <EditText
+            android:id="@+id/merchant_business_Address_registration"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="    Business Address.."
+            android:layout_below="@+id/merchant_business_details_registration"
+            android:layout_centerHorizontal="true"
+            android:lines="3"
+            />
+
+        <TextView
+            android:id="@+id/Payment_Information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Information"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/merchant_business_Address_registration"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:id="@+id/hr2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#050D1E"
+            android:layout_below="@+id/Payment_Information"/>
+
+        <EditText
+            android:id="@+id/merchant_bkash_num_registration"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="    Bkash Number.."
+            android:layout_below="@+id/hr2"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/merchant_rocket_num_registration"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="    Rocket Number.."
+            android:layout_below="@+id/merchant_bkash_num_registration"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/apply_merchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bluelongbuttonshape"
+            android:layout_below="@+id/merchant_rocket_num_registration"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Apply"
+            android:textAllCaps="false"
+            android:textColor="@color/yellowText"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

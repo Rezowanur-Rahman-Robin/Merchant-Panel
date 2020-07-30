@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".MerchantLoginActivity">
+
+
+    <include
+        layout="@layout/toolbar_merchant"
+        android:id="@+id/toolbar"
+        >
+    </include>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/company_header_holder"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_below="@+id/toolbar"
+       >
+
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="220dp"
+           android:background="@drawable/circleshape"
+           app:layout_constraintHorizontal_weight="1"
+           app:layout_constraintTop_toTopOf="parent"
+           tools:ignore="MissingConstraints"
+           tools:layout_editor_absoluteX="0dp">
+
+           <TextView
+               android:id="@+id/textView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="128dp"
+               android:text="Company Name"
+               android:textAlignment="center"
+               android:textColor="@color/yellowText"
+               android:textSize="30sp"
+               app:layout_constraintTop_toTopOf="parent"
+               tools:layout_editor_absoluteX="0dp" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Fast Delivery And Reliable Courier Service"
+               android:textAlignment="center"
+               android:textColor="@color/colorPrimary"
+               android:textSize="12sp"
+               app:layout_constraintTop_toBottomOf="@+id/textView"
+               tools:layout_editor_absoluteX="0dp" />
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/constraintLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/rectangel_shape"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               tools:ignore="MissingConstraints">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:src="@drawable/logo"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/merchant_login_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/company_header_holder"
+        >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/merchant_login_scrollview"
+        >
+
+
+
+
+   <EditText
+       android:id="@+id/merchantLoginEmail"
+       android:layout_width="280dp"
+       android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:hint="Enter Your Email"
+      android:layout_centerHorizontal="true"
+       android:textColor="@color/colorPrimaryDark"
+       android:textAlignment="center"
+       android:padding="10dp"
+      />
+
+   <EditText
+       android:id="@+id/merchantLoginPassword"
+       android:layout_width="280dp"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/merchantLoginEmail"
+       android:layout_marginTop="10dp"
+       android:hint="Enter Your Password"
+       android:layout_centerHorizontal="true"
+       android:inputType="textPassword"
+       android:textAlignment="center"
+       android:padding="10dp"
+       android:textColor="@color/colorPrimaryDark"
+       />
+
+   <Button
+       android:id="@+id/merchant_signInButton"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:layout_below="@+id/merchantLoginPassword"
+      android:background="@drawable/bluelongbuttonshape"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="15dp"
+      android:text="Sign in"
+      android:textColor="@color/yellowText"
+      android:textAllCaps="false"
+      android:textSize="20sp"
+      />
+   <TextView
+       android:id="@+id/forget_password_merchant"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:text="Forget Password"
+      android:layout_below="@+id/merchant_signInButton"
+      android:layout_centerHorizontal="true"
+      android:textColor="@color/colorPrimaryDark"
+      android:textAppearance="@style/TextAppearance.AppCompat"
+      android:layout_marginTop="3dp"/>
+
+
+    <Button
+        android:id="@+id/merchant_apply_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forget_password_merchant"
+        android:background="@drawable/bluelongbuttonshape"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Apply For Marchant"
+        android:textColor="@color/yellowText"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        />
+
+    </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
